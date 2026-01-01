@@ -15,6 +15,7 @@ std::vector<Mmeber>Lmembers{};
 
 
 public:
+Library(string s);
 void addBook(Book book);                                //Adds a book to the library
 void registerMember(Member member);                       // Registers a new member
 void lendBook(Member m, std::string ISBN) ;               //Allows a member to borrow a book by ISBN

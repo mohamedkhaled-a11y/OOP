@@ -17,10 +17,12 @@ Member::Member(std::string& Name,int Id,std::vector<Book>B):
                               
    void Member::borrowBook(Book B){
 
+    B.borrow();
     borrowedBooks.push_back(B)
 
    }                                    //Adds a book to borrowedBooks list
-   void returnBook(book)
+   void returnBook(Book B)
    {
-    borrowedBooks.erase(find(borrowedBooks.begin(), borrowedBooks.end(), B)); 
+    borrowedBooks.erase(find(borrowedBooks.begin(), borrowedBooks.end(), B));
+    B.returnBook();
    }                                  //Removes a book from borrowedBooks list
